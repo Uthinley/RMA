@@ -24,12 +24,13 @@ PROJECT_PATH = os.path.realpath(os.path.dirname(__file__))
 SECRET_KEY = '_ytfug@0yhkhbi(3po%eq(0qmqwjmmf2#u*0w9n1(*i*)c8#rl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 # for restricted host https://github.com/adamchainz/django-cors-headers
 CORS_ORIGIN_ALLOW_ALL=True
 # Application definition
+
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -81,7 +82,7 @@ WSGI_APPLICATION = 'RMA_app_backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'rma_app_db',
+        'NAME': 'rma_db_app',
         'USER' : 'root',
         'PASSWORD': '',
         'HOST': '',
